@@ -1,0 +1,9 @@
+ping -s 100 google.com
+ping -l 100 google.com
+sudo tcpdump -i eth0 icmp
+sudo tcpdump -i eth0 icmp -X
+
+
+
+ping -s 1400 google.com
+sudo hping3 -1 -d 120 -E data.txt 8.8.8.8
