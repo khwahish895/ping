@@ -1,0 +1,9 @@
+echo "HelloFromA" > msg.txt
+sudo hping3 -1 -E msg.txt -d 10 <receiver_ip>
+sudo tcpdump -i eth0 icmp -X
+
+
+  echo "Hi B!" > msg.txt
+sudo hping3 -1 -E msg.txt -d 5 192.168.1.20
+sudo tcpdump -i eth0 icmp -X
+0x0030:  4869 2042 21                             Hi B!
